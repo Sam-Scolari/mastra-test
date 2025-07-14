@@ -1,9 +1,9 @@
 import { createTool } from '@mastra/core/tools';
 import { z } from 'zod';
 
-export const consoleTool = createTool({
-      id: 'log-console',
-      description: 'Log a message to the console',
+export const logServer = createTool({
+      id: 'log-server',
+      description: 'Log a message to the server',
       inputSchema: z.object({
         message: z.string().describe('Message to log'),
       }),
