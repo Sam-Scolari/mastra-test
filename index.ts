@@ -1,5 +1,5 @@
 import { MastraClient } from "@mastra/client-js";
-import { consoleTool } from "../src/mastra/tools/console-tool";
+import { consoleTool } from "./src/mastra/tools/console-tool";
 import z from "zod";
 
 export const mastraClient = new MastraClient({
