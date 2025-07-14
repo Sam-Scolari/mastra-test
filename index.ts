@@ -10,14 +10,14 @@ const agent = mastraClient.getAgent("agent");
 
 const result = await agent.generate({
     messages: [
-        {
-            role: "user",
-            content: "Log this is a test!! to the client and respond with the message that was logged",
-        },
         // {
         //     role: "user",
-        //     content: "Log this is a test!! to the server and respond with the message that was logged",
+        //     content: "Log this is a test!! to the client and respond with the message that was logged", // This propmt errors
         // },
+        {
+            role: "user",
+            content: "Log this is a test!! to the server and respond with the message that was logged",
+        },
     ],
     experimental_output: z.object({
         text: z.string().describe("The text response to the prompt"),
